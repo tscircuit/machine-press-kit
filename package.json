@@ -1,0 +1,1 @@
+{"name":"nema17-press-tool-studio","version":"1.0.0","private":true,"type":"module","scripts":{"build":"esbuild src/app.js --bundle --minify --outfile=dist/app.js","check":"node --check src/app.js"},"dependencies":{"esbuild":"^0.25.0","three":"^0.180.0"}}

@@ -1,0 +1,106 @@
+[
+  {
+    "file": "platform_12p4.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      88.0,
+      70.0,
+      10.0
+    ],
+    "volume_mm3": 51533.076,
+    "triangles": 616
+  },
+  {
+    "file": "platform_5p8.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      88.0,
+      70.0,
+      10.0
+    ],
+    "volume_mm3": 54314.45,
+    "triangles": 616
+  },
+  {
+    "file": "platform_8p4.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      88.0,
+      70.0,
+      10.0
+    ],
+    "volume_mm3": 53259.569,
+    "triangles": 616
+  },
+  {
+    "file": "punch_05.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      17.0
+    ],
+    "volume_mm3": 3118.379,
+    "triangles": 764
+  },
+  {
+    "file": "punch_10.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      22.0
+    ],
+    "volume_mm3": 3194.351,
+    "triangles": 764
+  },
+  {
+    "file": "punch_15.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      27.0
+    ],
+    "volume_mm3": 3270.323,
+    "triangles": 764
+  },
+  {
+    "file": "riser.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      18.0,
+      70.0,
+      65.0
+    ],
+    "volume_mm3": 81774.13,
+    "triangles": 396
+  },
+  {
+    "file": "steel_guide.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "dimensions_mm": [
+      28.0,
+      28.0,
+      28.0
+    ],
+    "volume_mm3": 9356.006,
+    "triangles": 1152
+  }
+]
