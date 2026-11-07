@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@source "../dist/index.html";
+@source "./app.js";
+
+@layer base {
+  button, a, input { @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500; }
+  button { @apply cursor-pointer; }
+  canvas { @apply block touch-none; }
+}
+@layer components {
+  .assembly-btn { @apply mb-3 w-full rounded-md px-3 py-2 text-left text-sm font-medium hover:bg-gray-100; }
+  .part-btn { @apply my-1 flex min-w-40 items-center gap-3 rounded-md px-3 py-2 text-left text-xs hover:bg-gray-100 lg:w-full lg:min-w-0; }
+  .assembly-btn.active, .part-btn.active { @apply bg-gray-100 text-gray-950; }
+  .part-btn small { @apply mt-1 block text-xs text-gray-500; }
+  .number { @apply font-mono text-xs text-gray-400; }
+  .group-name { @apply mt-5 mb-2 hidden px-3 text-xs font-medium text-gray-400 lg:block; }
+  .view-controls { @apply flex rounded-md border border-gray-200 bg-white/95 p-1; }
+  .view-controls button { @apply rounded px-2 py-1 text-xs text-gray-500 hover:bg-gray-50; }
+  .view-controls button.selected, .view-controls button[aria-pressed="true"] { @apply bg-gray-100 text-gray-900; }
+  #specs > div { @apply flex justify-between gap-3 border-b border-gray-100 py-3; }
+  #specs dt { @apply text-gray-500; }
+  #specs dd { @apply text-right font-medium; }
+}

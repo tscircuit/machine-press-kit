@@ -1,8 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f5f2"><title>NEMA17 — Press Tool Studio</title><meta name="description" content="Explore and download an eight-part, printable prototype toolkit for removing hubs from 5 mm NEMA17 shafts."><link rel="stylesheet" href="/style.css"></head><body>
-<header><a class="brand" href="/"><span class="brandmark"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v13m-5-5 5 5 5-5M4 18h12"/></svg></span> FIELDWORK <span class="brandtail">/ TOOL LIBRARY</span></a><a class="quiet-link" href="/models/nema17-press-kit.zip" download>Download complete kit <span><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></span></a></header>
-<main><div class="intro"><div><div class="eyebrow">WORKSHOP SERIES <span>001 / MOTOR TOOLS</span></div><h1>A little more precision.<br>A little less force.</h1><p>A printable press-tool set for your 5 mm motor shafts.<br>Explore the geometry. Check the fit. Make it yours.</p></div><div class="intro-meta"><span class="status"><i></i> FIT-CHECK PROTOTYPE</span><strong>NEMA<span>17</span></strong><div>5 mm shaft <b>·</b> 8 designs <b>·</b> STL + CAD</div></div></div>
-<div class="studio"><aside class="library"><div class="section-label">THE TOOLKIT <span>08</span></div><button id="assembly" class="assembly-btn active"><span class="part-icon">⌘</span><span>Removal setup<small>See how it fits together</small></span><span class="arrow"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></span></button><div id="parts"></div><div class="library-foot"><i></i> All models in millimeters</div></aside>
-<section class="viewport" aria-label="Interactive 3D model viewer"><div class="view-top"><div><span class="eyebrow" id="view-kicker">ASSEMBLY / ILLUSTRATIVE</span><h2 id="view-title">The removal setup</h2></div><span class="live-badge">3D VIEW</span></div><div id="canvas-wrap"><div id="loading" role="status">Loading your toolkit…</div></div><div class="view-toolbar"><div class="segmented"><button id="iso" class="selected">Perspective</button><button id="front">Front</button><button id="top">Top</button></div><div class="tool-buttons"><button id="wire" aria-pressed="false" title="Toggle wireframe">Wireframe</button><button id="reset" title="Reset camera">↺ <span>Reset</span></button></div></div><div class="canvas-hint">Drag to orbit <span>·</span> Scroll to zoom <span>·</span> Right-drag to pan</div></section>
-<aside class="inspector"><div class="section-label">DESIGN NOTES <span><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M15 5 5 15M5 5v10h10"/></svg></span></div><span class="chip" id="category">SETUP GUIDE</span><h2 id="part-title">Support the hub.<br>Free the shaft.</h2><p id="description"></p><dl id="specs"></dl><div id="assembly-controls"><label for="travel">Removal travel <output id="travel-value">0 mm</output></label><input type="range" id="travel" min="0" max="12" value="0" step="0.1"><p class="micro">Illustrative 14 mm hub with a 10 mm through-bore length. Motor and hub are reference geometry, not printable parts.</p></div><a id="download-part" class="primary" href="/models/nema17-press-kit.zip" download>Download complete kit <span>↓</span></a><a class="source-link" href="/models/press-kit.scad" download>Editable OpenSCAD source <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a><div class="note" id="fit-note"></div></aside></div>
-<section class="below"><div class="section-label">FROM SCREEN TO WORKBENCH</div><div class="guides"><article><span class="step">01 / CHECK</span><h3>Measure before printing.</h3><p>NEMA17 describes the motor frame, not a guaranteed shaft size. This set assumes a 5 mm shaft, an accessible shaft end, and an open-ended hub. Measure your hub and the space beneath it.</p></article><article><span class="step">02 / PRINT</span><h3>Start with a fit check.</h3><p>Use PETG or nylon, 0.2 mm layers and 6+ walls. Start at 60% infill for supports; solid punches. Place punches flange-down. Print plates top-face-down for support-free underside seats. Print two risers.</p></article><article><span class="step">03 / REMOVE</span><h3>Keep the load off the bearings.</h3><p>Remove set screws. Seat a plate beneath the hub, with the motor hanging freely between the risers. Press the shaft end gently downward. Catch the motor as it releases. Stop if a tool bends or slips.</p></article></div><div class="engineering-note"><span><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3v10h12m-5-5 5 5-5 5"/></svg></span><p><strong>Prototype geometry, not load-rated tooling.</strong> The printed punches are for light hand pressure and alignment. For tight interference fits, use a properly supported steel punch and metal support tooling. Do not hammer these parts. Blind sleeves cannot be removed with this through-punch setup. Installation needs direct rear shaft support; resting the motor casing on a platform loads its bearings.</p></div></section>
-<footer><span>FIELDWORK <b>/</b> NEMA17 PRESS KIT</span><a href="/models/README.txt" download>Dimensions & print notes <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a><span>REV 01 · MILLIMETERS</span></footer></main><script type="module" src="/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Machine Press Kit</title>
+  <meta name="description" content="NEMA17 press-tool models, dimensions, and STL downloads.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-white font-sans text-gray-900 antialiased">
+  <header class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-6 sm:px-6">
+    <div><h1 class="text-xl font-semibold">Machine Press Kit</h1><p class="mt-1 text-sm text-gray-500">NEMA17 · 5 mm shaft · 8 models</p></div>
+    <nav class="flex items-center gap-4 text-sm" aria-label="Project links">
+      <a class="hover:underline" href="https://github.com/tscircuit/machine-press-kit">GitHub</a>
+      <a class="rounded-md bg-gray-900 px-4 py-2 text-white hover:bg-gray-700" href="/models/nema17-press-kit.zip" download>Download kit</a>
+    </nav>
+  </header>
+  <main class="mx-auto max-w-7xl px-4 pb-6 sm:px-6">
+    <div class="grid overflow-hidden rounded-lg border border-gray-200 lg:grid-cols-[210px_minmax(0,1fr)_250px]">
+      <aside class="min-w-0 border-b border-gray-200 p-3 lg:border-r lg:border-b-0" aria-label="Parts">
+        <button id="assembly" class="assembly-btn active">Assembly</button>
+        <div id="parts" class="flex gap-2 overflow-x-auto lg:block"></div>
+      </aside>
+      <section class="relative min-h-[480px] min-w-0 bg-white sm:min-h-[560px]" aria-label="Interactive 3D viewer">
+        <h2 id="view-title" class="pointer-events-none absolute top-5 left-5 z-10 text-sm font-medium">Assembly</h2>
+        <div id="canvas-wrap" class="absolute inset-0"><div id="loading" class="absolute inset-0 grid place-items-center p-6 text-sm text-gray-500" role="status">Loading models…</div></div>
+        <div class="absolute right-3 bottom-10 left-3 flex flex-wrap justify-between gap-2">
+          <div class="view-controls"><button id="iso" class="selected">Perspective</button><button id="front">Front</button><button id="top">Top</button></div>
+          <div class="view-controls"><button id="wire" aria-pressed="false">Wireframe</button><button id="reset">Reset</button></div>
+        </div>
+        <p class="pointer-events-none absolute right-0 bottom-4 left-0 text-center text-xs text-gray-400">Drag to orbit · Scroll to zoom · Right-drag to pan</p>
+      </section>
+      <aside class="min-w-0 border-t border-gray-200 p-5 lg:border-t-0 lg:border-l" aria-label="Dimensions and downloads">
+        <h2 class="text-sm font-semibold">Dimensions</h2>
+        <dl id="specs" class="my-4 text-xs"></dl>
+        <div id="assembly-controls">
+          <label for="travel" class="flex justify-between text-xs">Removal travel <output id="travel-value">0 mm</output></label>
+          <input class="mt-3 w-full accent-gray-900" type="range" id="travel" min="0" max="12" value="0" step="0.1">
+          <p class="mt-2 text-xs text-gray-500">Motor and hub shown for reference.</p>
+        </div>
+        <p id="fit-note" class="mt-5 text-xs leading-relaxed text-gray-600"></p>
+        <a id="download-part" class="mt-5 block rounded-md bg-gray-900 px-4 py-2 text-center text-sm text-white hover:bg-gray-700" href="/models/nema17-press-kit.zip" download>Download kit</a>
+        <a class="mt-3 block text-center text-xs text-gray-600 hover:underline" href="/models/press-kit.scad" download>OpenSCAD source</a>
+      </aside>
+    </div>
+    <footer class="mt-4 flex flex-wrap items-start justify-between gap-3 text-xs leading-relaxed text-gray-500">
+      <p class="max-w-3xl">Unrated prototypes. Light hand pressure only; no hammering. Tight fits require metal punches and supports.</p>
+      <a class="shrink-0 underline underline-offset-2" href="/models/README.txt" download>Print &amp; use notes</a>
+    </footer>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
